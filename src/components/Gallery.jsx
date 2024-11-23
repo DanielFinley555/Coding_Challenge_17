@@ -8,7 +8,8 @@ const [tours, setTours] = useState([]);
 
 //Fetch data from the API using useEffect
 useEffect(() => {
-    //Had to copy and paste the link from the api website in order for the fetch to work
+    //Had to copy and paste the link from the api website instead of from the project instructions, not sure why, but after a lot of trial and error this is what worked
+    //Did this to fix the "blocked by CORS policy" error
     //so the link is 'https://www.course-api.com/react-tours-project', instead of 'https://course-api.com/react-tours-project'
     fetch('https://www.course-api.com/react-tours-project')
         .then((response) => response.json())
